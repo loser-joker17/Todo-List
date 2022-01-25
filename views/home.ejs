@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title><%= title %></title> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body> 
+    <h1 id="heading">TODO APP</h1> 
+    <div  id="outer-div"> 
+        <form id="description-div" action="/create-description" method="POST"> 
+            <div id="description-1">
+               DESCRIPTION <br>
+               <input type="text" name="description" placeholder="What do you need to do" required> 
+            </div>
+            <div id="category-date">
+                <span id="category-1">
+                    Category <br> 
+                    <select name="category" id="select-category"> 
+                        <option value="Choose a category">Choose a category</option>
+                        <option value="Personal">Personal</option> 
+                        <option value="Work">Work</option> 
+                        <option value="School">School</option> 
+                        <option value="Cleaning">Cleaning</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </span> 
+                <span id="date-1">
+                    <br> Due Date <br> 
+                    <input type="date" name="date" placeholder="yyyy/dd/mm" required>
+                </span>
+            </div> 
+            <div id="button-div">
+                <button id="add-task-1" type="submit">
+                    <i class="fas fa-plus"></i> 
+                    Add Task
+                </button> 
+                <button id="delete-task-1" type="submit" form="delete-task-3">
+                    <i class="fas fa-trash-alt"></i> 
+                    Delete Task
+                </button>
+            </div> 
+            </form>  
+            <form id="delete-task-3" action="/delete-todo-item" method="POST">
+            <div id="description-list-down"> 
+                <% for(let i of description_list){ %>  
+                    <div id="description-list"> 
+                        <div id="description-ejs">
+                           <input type="checkbox" name="taskname" value="<%= i.description %>" ><%= i.description %>  
+                        </div> 
+                        <div id="category-2"><%= i.category %></div>
+                        <div id="date-2"><%= i.date%></div>   
+                        
+                    </div> 
+                <% } %>
+            </div> 
+        </form>  
+    </div> 
+</body>
+</html>

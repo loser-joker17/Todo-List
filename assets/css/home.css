@@ -1,0 +1,100 @@
+*body{
+    margin: 0; 
+}  
+#heading{
+    text-align: center;
+}
+#outer-div{
+    margin-left: 2rem;
+}
+#description-1{ 
+    border-bottom: 2px solid black; 
+    border-top: 2px solid black; 
+    font-size: 1.5rem; 
+    padding-top: .4rem;
+} 
+#description-1 input{  
+    border: none;
+  outline: none;
+  font-size: 1.8rem; 
+  padding-bottom: .4rem;
+}  
+#category-date{   
+    width: 100%; 
+    border-bottom: 2px solid black; 
+    margin-bottom: 2.5rem;  
+    margin-top: -1.9rem;
+}  
+
+#category-1{
+    font-size: 1.8rem; 
+    display: inline-block; 
+    width: 40%;
+}
+#select-category{
+    border: none; 
+    outline: none; 
+    font-size: 1.5rem; 
+    width: 50%;
+} 
+#date-1{
+    font-size: 1.8rem; 
+    padding-top: .4rem; 
+    display: inline-block; 
+} 
+#date-1 input{
+  border: none;
+  outline: none;
+  font-size: 1.5rem; 
+  padding-bottom: .4rem;
+} 
+#button-div{
+    text-align: center;
+} 
+
+#add-task-1{ 
+    font-size: 1.8rem;   
+    padding: 1rem;
+    background-color: black; 
+    color:white; 
+}  
+#delete-task-1{
+    background-color: red; 
+    color:white; 
+    font-size: 1.8rem; 
+    padding: 1rem; 
+    margin-left: .5rem;
+}  
+
+#description-list{ 
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black; 
+    background-color: lightgrey;
+}  
+#description-list {
+    font-size: 1.2rem; 
+    margin-top: 2rem; 
+    padding-top: 0.3rem; 
+    font-size: 1.5rem;
+}  
+#category-date-1{
+    margin-top: .8rem; 
+} 
+#date-2{
+    margin-left: 2rem;  
+    margin-top: -.4rem; 
+    font-size: 1.1rem;
+}
+#category-2{ 
+    height: 2.1rem; 
+    width: 6.4rem;
+    background-color: blue;  
+    padding-top: .3rem;  
+    text-align: center; 
+    vertical-align: middle;
+    margin-left: 45%; 
+    border-radius: 10px;
+    margin-top: -0.5rem;
+
+ } 
+
